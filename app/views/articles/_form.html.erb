@@ -10,6 +10,6 @@
   </div>
 
   <div>
-    <%= form.submit form.object.persisted? ? "Update Article" : "Create Article" %>
+    <%= form.submit form.object.persisted? ? "Update Article" : "Create Article", class: "btn btn-primary submit-button" %>
   </div>
 <% end %>

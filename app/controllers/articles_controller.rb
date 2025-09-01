@@ -18,15 +18,15 @@ before_action :set_article, only: [:show, :edit, :update, :destroy]
   end
 
   def update
-    article.update(article_params)
-    redirect_to article_path(article)
+    @article.update(article_params)
+    redirect_to article_path(@article)
   end
 
   def show
   end
 
   def destroy
-    article.destroy
+    @article.destroy
     redirect_to articles_path
   end
 
